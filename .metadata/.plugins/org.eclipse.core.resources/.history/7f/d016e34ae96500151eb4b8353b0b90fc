@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="false" timestamp="14">
+  <list key="modules" value0="automatosRegex::org.eclipse.jst.jee.server:automatosRegex::jst.web::3.0" value1="automatos::org.eclipse.jst.jee.server:automatos::jst.web::3.0" value2="jsf-jpa::org.eclipse.jst.jee.server:jsf-jpa::jst.web::3.0" value3="VFStudy::org.eclipse.jst.jee.server:VFStudy::jst.web::3.0" value4="MikeiasVF::org.eclipse.jst.jee.server:MikeiasVF::jst.web::3.0"/>
+</server>

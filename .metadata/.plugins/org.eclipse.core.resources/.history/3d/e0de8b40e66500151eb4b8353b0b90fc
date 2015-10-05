@@ -1,0 +1,5 @@
+package br.edu.fa7.studentshare.daos;
+
+public class StudentDAO {
+	
+}

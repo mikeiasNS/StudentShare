@@ -89,7 +89,7 @@ def top_matchs(prefs, person, n = 5, similarity=sim_distance):
     scores.reverse()
     return scores[0:n]
 
-def get_recommendations(prefs, person, similarity=sim_distance):
+def get_recommendations(prefs, person, similarity=sim_pearson):
     totals = {}
     sim_sums = {}
 

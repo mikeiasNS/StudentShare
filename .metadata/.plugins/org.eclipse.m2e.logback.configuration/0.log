@@ -1,0 +1,2 @@
+2015-06-14 15:23:44,980 [Worker-67] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/eclipse/persistence/javax.persistence/2.1.0-RC2/javax.persistence-2.1.0-RC2-sources.jar
+2015-06-14 15:23:46,900 [Worker-67] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/eclipse/persistence/javax.persistence/2.1.0-RC2/javax.persistence-2.1.0-RC2-sources.jar

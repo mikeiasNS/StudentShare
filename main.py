@@ -4,5 +4,5 @@ from recommendations import critics, sim_distance, sim_pearson, top_matchs, get_
 #print( "Pearson: ", sim_pearson(critics, 'Lisa Rose', 'Toby') )
 
 print( "rank ", top_matchs(critics, 'Toby'))
-for item in get_recommendations(critics, 'Toby'):
-	print item
+#for item in get_recommendations(critics, 'Toby'):
+#	print item

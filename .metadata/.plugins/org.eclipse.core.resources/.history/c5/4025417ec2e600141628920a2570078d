@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<h:head>
+	</h:head>
+	
+	<h:body>
+		<h:form>
+			<h:panelGrid columns="2">
+				<h:outputLabel for="nome" value="Nome do produto: "/>
+				<h:inputText id="nome" value="#{produtoBean.produto.nome}"/>
+				
+				<h:outputLabel for="descricao" value="Descrição do produto: "/>
+				<h:inputTextarea id="descricao" value="#{produtoBean.produto.descricao}"/>
+				
+				<h:outputLabel for="preco" value="Preco do produto: "/>
+				<h:panelGroup>
+					<h:inputText id="preco" value="#{produtoBean.produto.preco}"/>	
+					<h:graphicImage value='moeda.png'></h:graphicImage>
+				</h:panelGroup>
+				
+				<h:outputLabel for="perecivel" value="Perecível "/>
+				<h:selectBooleanCheckbox id='perecivel' value='#{produtoBean.produto.perecivel}'/>
+				
+				<h:outputLabel for="unidade" value="Unidade: "/>
+				<h:selectOneMenu id='unidade' value='#{produtoBean.produto.unidade}'>
+					<f:selectItem itemLabel='Kilo' itemValue= 'Kg'/>
+					<f:selectItem itemLabel='metro' itemValue= 'm'/>
+					<f:selectItem itemLabel='litro' itemValue= 'l'/>
+				</h:selectOneMenu>
+				
+				<h:outputLabel for="fornecedor" value="Fornecedor "/>
+				<h:selectOneMenu id='fornecedor'>
+					<f:selectItems value="#{produtoBean.fornecedores}" 
+						var="f" itemLabel="#{f.nome}" itemValue="#{f.id}"/>
+				</h:selectOneMenu>
+				
+				<h:commandButton value='Enviar' action='hum'/>
+			</h:panelGrid>
+		</h:form>
+		
+	</h:body>
+</html>
