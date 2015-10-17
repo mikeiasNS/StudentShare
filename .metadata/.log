@@ -8915,3 +8915,40 @@ java.net.UnknownHostException: download.jboss.org
 
 !ENTRY org.jboss.tools.project.examples 2 0 2015-10-05 10:14:54.053
 !MESSAGE Invalid URL: http://download.jboss.org/jbosstools/examples/project-examples-shared-4.2.GA.xml
+
+!ENTRY org.jboss.tools.central 4 0 2015-10-05 15:17:14.834
+!MESSAGE Software caused connection abort: recv failed
+!STACK 0
+java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read1(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at sun.net.www.MeteredStream.read(Unknown Source)
+	at java.io.FilterInputStream.read(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection$HttpInputStream.read(Unknown Source)
+	at java.util.Properties$LineReader.readLine(Unknown Source)
+	at java.util.Properties.load0(Unknown Source)
+	at java.util.Properties.load(Unknown Source)
+	at org.jboss.tools.central.installation.BundleFamilyExtension.loadBundleList(BundleFamilyExtension.java:60)
+	at org.jboss.tools.central.installation.InstallationChecker.getUnits(InstallationChecker.java:99)
+	at org.jboss.tools.central.installation.InstallationChecker.getEarlyAccessUnits(InstallationChecker.java:79)
+	at org.jboss.tools.central.installation.InstallationChecker.hasEarlyAccess(InstallationChecker.java:72)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.jobs 4 2 2015-10-05 15:17:15.508
+!MESSAGE An internal error occurred during: "Check installation for Early Access".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4441)
+	at org.eclipse.swt.SWT.error(SWT.java:4356)
+	at org.eclipse.swt.SWT.error(SWT.java:4327)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:476)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:590)
+	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:572)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
