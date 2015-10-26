@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/workspace/libraries/JSF 2.2 (Mojarra 2.2.0)/mojarra-2.2.0-FCS/lib/javax.faces.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="StudentShare-jsf"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="StudentShare-jsf"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="StudentShare-jsf"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="StudentShare-jsf"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/StudentShare2/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="StudentShare2"/>
+    </library>
+   </libraries>
+  </path>
+ </paths>
+ <validation>
+  <el/>
+ </validation>
+ <aliases/>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
+</kb-project>

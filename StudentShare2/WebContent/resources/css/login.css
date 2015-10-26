@@ -1,0 +1,12 @@
+@CHARSET "ISO-8859-1";
+
+body {
+    background-color: #FFFFFF;
+}
+
+.container{
+    background-color: #F0F0FF;
+    margin-top: 15%;
+	height: auto;
+	width: 35%;
+	}

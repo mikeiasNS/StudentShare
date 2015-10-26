@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+<h:head>
+	<h:outputStylesheet library="css" name="login.css"></h:outputStylesheet>
+	<h:outputStylesheet library="css" name="bootstrap.css"></h:outputStylesheet>
+</h:head>
+<h:body>
+	<div class="container">
+    <h:form class="form-signin">
+        <h2 class="form-signin-heading">Por favor entre</h2>
+        <h:outputLabel for="inputEmail" class="sr-only">Usuário</h:outputLabel>
+        <h:inputText id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="" type="email"/>
+        <h:outputLabel for="inputPassword" class="sr-only">Senha</h:outputLabel>
+        <h:inputText id="inputPassword" class="form-control" placeholder="Password" required="" type="password"/>
+        <div class="checkbox">
+            <label>
+                <h:selectBooleanCheckbox id="checkboxmelembre" value="remember-me" type="checkbox"></h:selectBooleanCheckbox>
+                <h:outputLabel value="Lembre-me" for="checkboxmelembre"/>
+            </label>
+        </div>
+        <h:commandButton class="btn btn-lg btn-primary btn-block" action="meuPerfil" value="Entrar"></h:commandButton>
+    </h:form>
+</div> <!-- /container -->
+</h:body>
+</html>

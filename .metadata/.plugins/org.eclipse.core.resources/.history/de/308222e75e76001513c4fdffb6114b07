@@ -1,0 +1,18 @@
+package br.edu.fa7.estagio2.mongo;
+
+import com.mongodb.MongoClient;
+import com.mongodb.client.MongoDatabase;
+
+public class MongoDAO {
+	private static MongoClient mongoClient;
+	private static MongoDatabase dataBase;
+	
+	public static void init(String DB){
+		mongoClient = new MongoClient(); 
+		dataBase = mongoClient.getDatabase(DB);
+	}
+	
+	public static void insert(){
+		
+	}
+}

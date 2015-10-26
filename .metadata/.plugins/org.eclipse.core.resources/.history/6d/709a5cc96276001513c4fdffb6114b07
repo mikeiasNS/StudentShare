@@ -1,0 +1,13 @@
+package br.edu.fa7.estagio2.beans;
+
+import javax.faces.bean.ManagedBean;
+
+import br.edu.fa7.estagio2.dao.MongoDAO;
+import br.edu.fa7.estagio2.models.Client;
+
+@ManagedBean
+public class ClientBean {
+	private MongoDAO DAO = MongoDAO.singletonDAO();
+	
+	private Client client = new Client();
+}

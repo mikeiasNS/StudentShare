@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/workspace/libraries/JSF 2.2 (Mojarra 2.2.0)/mojarra-2.2.0-FCS/lib/javax.faces.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="StudentShare-jsf"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="StudentShare-jsf"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="StudentShare-jsf"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="StudentShare-jsf"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/com.sun.xml.bind_2.2.0.v201004141950.jar"/>
+  <path value="C:/Users/MK-NB/Desktop/python/MongoTest/WebContent/WEB-INF/lib/mongodb-driver-3.0.4.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/eclipselink.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.activation_1.1.0.v201108011116.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/jasper-el.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.mail_1.4.0.v201005080615.jar"/>
+  <path value="/MongoTest/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="MongoTest"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/javax.persistence_2.1.0.v201304241213.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-jdbc.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-dbcp.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.xml.bind_2.2.0.v201105210648.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/catalina-ha.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/jasper.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/servlet-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-util.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat7-websocket.jar"/>
+  <path value="C:/Users/MK-NB/Desktop/python/MongoTest/WebContent/WEB-INF/lib/bson-3.0.4.jar"/>
+  <path value="C:/Users/MK-NB/Desktop/python/MongoTest/WebContent/WEB-INF/lib/mongodb-driver-core-3.0.4.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-api.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/com.sun.tools.xjc_2.2.0.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/annotations-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/catalina-ant.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.xml.stream_1.0.1.v201004272200.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-coyote.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/jsp-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/websocket-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/catalina-tribes.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/catalina.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/el-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/ecj-4.4.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="23" name="%0" offset="371" path="%1"/>
+   <linked-el length="28" name="%0" offset="439" path="%2"/>
+   <linked-el length="24" name="%0" offset="609" path="%1"/>
+   <linked-el length="26" name="%0" offset="737" path="%1"/>
+   <linked-el length="27" name="%0" offset="591" path="%2"/>
+   <linked-el length="25" name="%0" offset="674" path="%2"/>
+   <linked-el length="29" name="%0" offset="514" path="%2"/>
+   <linked-el length="23" name="%3" offset="371" path="%1"/>
+   <linked-el length="28" name="%3" offset="439" path="%2"/>
+   <linked-el length="24" name="%3" offset="609" path="%1"/>
+   <linked-el length="26" name="%3" offset="737" path="%1"/>
+   <linked-el length="20" name="%3" offset="428" path="%1"/>
+   <linked-el length="27" name="%3" offset="591" path="%2"/>
+   <linked-el length="21" name="%3" offset="474" path="%1"/>
+   <linked-el length="19" name="%3" offset="521" path="%1"/>
+   <linked-el length="25" name="%3" offset="674" path="%2"/>
+   <linked-el length="29" name="%3" offset="514" path="%2"/>
+   <linked-el length="28" name="%4" offset="439" path="%2"/>
+   <linked-el length="20" name="%4" offset="428" path="%1"/>
+   <linked-el length="27" name="%4" offset="591" path="%2"/>
+   <linked-el length="21" name="%4" offset="474" path="%1"/>
+   <linked-el length="19" name="%4" offset="521" path="%1"/>
+   <linked-el length="29" name="%4" offset="514" path="%2"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="/MongoTest/src/br/edu/fa7/estagio2/beans/ClientBean.java" value="%0"/>
+  <alias path="/MongoTest/WebContent/clients.xhtml" value="%1"/>
+  <alias path="clientBean" value="%3"/>
+  <alias path="/MongoTest/src/br/edu/fa7/estagio2/models/Client.java" value="%4"/>
+  <alias path="/MongoTest/WebContent/index.xhtml" value="%2"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
+</kb-project>
