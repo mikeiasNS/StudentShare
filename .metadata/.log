@@ -9332,3 +9332,14 @@ java.io.IOException: Server returned HTTP response code: 403 for URL: http://dow
 	at org.jboss.tools.central.installation.InstallationChecker.hasEarlyAccess(InstallationChecker.java:72)
 	at org.jboss.tools.central.editors.JBossCentralEditor$HeaderText$3.run(JBossCentralEditor.java:571)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.core.resources 2 2 2015-10-26 08:58:13.831
+!MESSAGE Save operation warnings.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2015-10-26 08:58:13.831
+!MESSAGE The project description file (.project) for 'StudentShare2' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.jboss.tools.common.model 1 0 2015-10-26 08:58:14.731
+!MESSAGE WARNING: workspace home changed from C:/Users/MK-NB/Desktop/python/StudentShare2/WebContent/WEB-INF to 
+
+!ENTRY org.jboss.tools.common.model 2 0 2015-10-26 08:58:14.816
+!MESSAGE Project P/StudentShare2 has corrupted nature: org.jboss.tools.jsf.jsfnature

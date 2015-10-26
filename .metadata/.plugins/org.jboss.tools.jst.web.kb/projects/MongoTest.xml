@@ -7,19 +7,19 @@
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="StudentShare-jsf"/>
+      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="MongoTest"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="StudentShare-jsf"/>
+      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="MongoTest"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="StudentShare-jsf"/>
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="MongoTest"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="StudentShare-jsf"/>
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="MongoTest"/>
     </library>
    </libraries>
   </path>
