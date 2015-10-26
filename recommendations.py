@@ -47,6 +47,7 @@ critics = {'Lisa Rose': {'Lady in the water': 2.5,
                          'Superman Returns': 4.0}
           }
 
+#Euclidian
 def sim_distance(prefs, person1, person2):
     si = {}
     for item in prefs[person1]:
@@ -82,21 +83,21 @@ def sim_pearson(prefs, person1, person2):
 
     return r
 
-def top_matchs(prefs, person, n = 5, similarity=sim_distance):
-    scores = [(similarity(prefs, person, other), other) for other in prefs if other != person]
+def top_matchs(prefs, person, n = 5):
+    scores = [(sim_distance(prefs, person, other), other) for other in prefs if other != person]
 
     scores.sort()
     scores.reverse()
     return scores[0:n]
 
-def get_recommendations(prefs, person, similarity=sim_pearson):
+def get_recommendations(prefs, person):
     totals = {}
     sim_sums = {}
 
     for other in prefs:
         if other == person: continue
 
-        sim = similarity(prefs, person, other)
+        sim = sim_distance(prefs, person, other)
 
         if sim <= 0: continue
 

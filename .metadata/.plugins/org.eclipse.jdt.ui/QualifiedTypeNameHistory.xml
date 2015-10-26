@@ -19,7 +19,6 @@
 <fullyQualifiedTypeName name="javax.persistence.Enumerated"/>
 <fullyQualifiedTypeName name="br.edu.estudo.jpa.User"/>
 <fullyQualifiedTypeName name="java.util.GregorianCalendar"/>
-<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="br.edu.estudo.jpa.User.StatusType"/>
 <fullyQualifiedTypeName name="br.edu.estudo.jpa.Vehicle"/>
@@ -35,17 +34,26 @@
 <fullyQualifiedTypeName name="br.edu.fa7.tecnicas.vf.jpa.ApplicationDAO"/>
 <fullyQualifiedTypeName name="br.edu.fa7.tecnicas.vf.jpa.ApplicationDAOJpa"/>
 <fullyQualifiedTypeName name="br.edu.fa7.tecnicas.vf.jpa.Despesa"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="br.edu.fa7.tecnicas.vf.jpa.TipoDespesa"/>
 <fullyQualifiedTypeName name="javax.persistence.JoinColumn"/>
 <fullyQualifiedTypeName name="javax.persistence.ManyToOne"/>
 <fullyQualifiedTypeName name="javax.persistence.OneToMany"/>
 <fullyQualifiedTypeName name="javax.persistence.CascadeType"/>
-<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="br.edu.fa7.studentshare.daos.StudentDAO"/>
 <fullyQualifiedTypeName name="br.edu.fa7.studentshare.models.Student"/>
+<fullyQualifiedTypeName name="com.mongodb.MongoClient"/>
+<fullyQualifiedTypeName name="com.mongodb.client.MongoDatabase"/>
+<fullyQualifiedTypeName name="br.edu.fa7.estagio2.mongo.MongoDAO"/>
+<fullyQualifiedTypeName name="com.mongodb.client.MongoCollection"/>
+<fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
+<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
+<fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.mongodb.Block"/>
+<fullyQualifiedTypeName name="br.edu.fa7.estagio2.models.Client"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.bson.Document"/>
 </qualifiedTypeNameHistroy>

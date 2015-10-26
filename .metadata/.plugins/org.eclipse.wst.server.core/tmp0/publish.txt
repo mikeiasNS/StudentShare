@@ -1,4 +1,4 @@
 #Tomcat publish data
-#Mon Oct 05 10:17:20 GMT-03:00 2015
-org.eclipse.jst.jee.server\:/binary\:C\:\\workspace\\libraries\\EclipseLink\ 2.5.2\\eclipselink\\jlib\\jpa\\org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar=C\:\\apache-tomcat-7.0.59\\wtpwebapps\\StudentShare-jsf\\WEB-INF\\lib\\org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar
-org.eclipse.jst.jee.server\:StudentShare-jsf=C\:\\apache-tomcat-7.0.59\\wtpwebapps\\StudentShare-jsf
+#Mon Oct 19 11:08:17 GMT-03:00 2015
+org.eclipse.jst.jee.server\:/binary\:C\:\\workspace\\libraries\\EclipseLink\ 2.5.2\\eclipselink\\jlib\\jpa\\org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar=C\:\\apache-tomcat-7.0.59\\wtpwebapps\\MongoTest\\WEB-INF\\lib\\org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar
+org.eclipse.jst.jee.server\:MongoTest=C\:\\apache-tomcat-7.0.59\\wtpwebapps\\MongoTest
