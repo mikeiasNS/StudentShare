@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="3.0.1-dev-20150306-5afe4d1" sequence="1" timestamp="1445906599661" analysisTimestamp="1445906597693" release="">
+  <Project projectName="MongoTest">
+    <Jar>C:\Users\MK-NB\Desktop\python\MongoTest\build\classes</Jar>
+    <AuxClasspathEntry>C:\Users\MK-NB\Desktop\python\MongoTest\build\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\annotations-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\catalina-ant.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\catalina-ha.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\catalina-tribes.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\catalina.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\ecj-4.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\el-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\jasper-el.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\jasper.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\jsp-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\servlet-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat-coyote.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat-dbcp.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat-i18n-es.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat-i18n-fr.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat-i18n-ja.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat-jdbc.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat-util.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\tomcat7-websocket.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\apache-tomcat-7.0.59\lib\websocket-api.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\MK-NB\Desktop\python\MongoTest\WebContent\WEB-INF\lib\bson-3.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\MK-NB\Desktop\python\MongoTest\WebContent\WEB-INF\lib\mongodb-driver-3.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\MK-NB\Desktop\python\MongoTest\WebContent\WEB-INF\lib\mongodb-driver-core-3.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\eclipselink.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\jpa\javax.persistence_2.1.0.v201304241213.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\jpa\org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\jpa\org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\moxy\com.sun.tools.xjc_2.2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\moxy\com.sun.xml.bind_2.2.0.v201004141950.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\moxy\javax.activation_1.1.0.v201108011116.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\moxy\javax.mail_1.4.0.v201005080615.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\moxy\javax.xml.bind_2.2.0.v201105210648.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\EclipseLink 2.5.2\eclipselink\jlib\moxy\javax.xml.stream_1.0.1.v201004272200.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\workspace\libraries\JSF 2.2 (Mojarra 2.2.0)\mojarra-2.2.0-FCS\lib\javax.faces.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files\Java\jre1.8.0_40\lib\rt.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\MK-NB\Desktop\python\MongoTest\src</SrcDir>
+    <Cloud id="edu.umd.cs.findbugs.cloud.doNothingCloud" online="false"></Cloud>
+  </Project>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Mon, 26 Oct 2015 21:42:47 -0300" total_classes="4" referenced_classes="24" total_bugs="0" total_size="88" num_packages="3" java_version="1.8.0_40" vm_version="25.40-b25" cpu_seconds="6.39" clock_seconds="1.97" peak_mbytes="475.88" alloc_mbytes="455.50" gc_seconds="0.08">
+    <PackageStats package="br.edu.fa7.estagio2.beans" total_bugs="0" total_types="1" total_size="23">
+      <ClassStats class="br.edu.fa7.estagio2.beans.ClientBean" sourceFile="ClientBean.java" interface="false" size="23" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="br.edu.fa7.estagio2.dao" total_bugs="0" total_types="2" total_size="37">
+      <ClassStats class="br.edu.fa7.estagio2.dao.MongoDAO" sourceFile="MongoDAO.java" interface="false" size="25" bugs="0"/>
+      <ClassStats class="br.edu.fa7.estagio2.dao.MongoDAO$1" sourceFile="MongoDAO.java" interface="false" size="12" bugs="0"/>
+    </PackageStats>
+    <PackageStats package="br.edu.fa7.estagio2.models" total_bugs="0" total_types="1" total_size="28">
+      <ClassStats class="br.edu.fa7.estagio2.models.Client" sourceFile="Client.java" interface="false" size="28" bugs="0"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassInfoAnalysisEngine" totalMilliseconds="746" invocations="406" avgMicrosecondsPerInvocation="1839" maxMicrosecondsPerInvocation="46266" standardDeviationMircosecondsPerInvocation="4526"/>
+      <ClassProfile name="de.tobject.findbugs.builder.FindBugs2Eclipse" totalMilliseconds="338" invocations="2" avgMicrosecondsPerInvocation="169455" maxMicrosecondsPerInvocation="294004" standardDeviationMircosecondsPerInvocation="124549"/>
+      <ClassProfile name="edu.umd.cs.findbugs.classfile.engine.ClassDataAnalysisEngine" totalMilliseconds="138" invocations="408" avgMicrosecondsPerInvocation="339" maxMicrosecondsPerInvocation="13195" standardDeviationMircosecondsPerInvocation="647"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FieldItemSummary" totalMilliseconds="74" invocations="24" avgMicrosecondsPerInvocation="3086" maxMicrosecondsPerInvocation="20265" standardDeviationMircosecondsPerInvocation="4995"/>
+      <ClassProfile name="edu.umd.cs.findbugs.OpcodeStack$JumpInfoFactory" totalMilliseconds="59" invocations="94" avgMicrosecondsPerInvocation="635" maxMicrosecondsPerInvocation="2708" standardDeviationMircosecondsPerInvocation="622"/>
+      <ClassProfile name="edu.umd.cs.findbugs.detect.FindNoSideEffectMethods" totalMilliseconds="48" invocations="24" avgMicrosecondsPerInvocation="2031" maxMicrosecondsPerInvocation="20263" standardDeviationMircosecondsPerInvocation="4044"/>
+      <ClassProfile name="edu.umd.cs.findbugs.util.TopologicalSort" totalMilliseconds="38" invocations="374" avgMicrosecondsPerInvocation="103" maxMicrosecondsPerInvocation="1672" standardDeviationMircosecondsPerInvocation="158"/>
+      <ClassProfile name="edu.umd.cs.findbugs.ba.npe.NullDerefAndRedundantComparisonFinder" totalMilliseconds="31" invocations="23" avgMicrosecondsPerInvocation="1358" maxMicrosecondsPerInvocation="6610" standardDeviationMircosecondsPerInvocation="1469"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1445906599661" release="" codeSize="0" numClasses="0"/>
+  </History>
+</BugCollection>
