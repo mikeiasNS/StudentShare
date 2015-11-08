@@ -56,7 +56,7 @@ def sim_distance(prefs, person1, person2):
 
     if len(si) == 0: return 0
 
-    sum_of_squares = sum([pow(prefs[person1][item] - prefs[person2][item], 2) for item in si])
+    sum_of_squares = sum([pow(float(prefs[person1][item].replace(",", ".")) - float(prefs[person2][item].replace(",", ".")), 2) for item in si])
     return 1 / (1 + sqrt(sum_of_squares))
 
 def sim_pearson(prefs, person1, person2):
@@ -105,7 +105,7 @@ def get_recommendations(prefs, person):
 
             if item not in prefs[person] or prefs[person][item] == 0:
 				totals.setdefault(item, 0)
-				totals[item] += prefs[other][item] * sim
+				totals[item] += float(prefs[other][item].replace(",", ".")) * sim
 				
 				sim_sums.setdefault(item, 0)
 				sim_sums[item] += sim
@@ -113,6 +113,6 @@ def get_recommendations(prefs, person):
     ranking = [(total/sim_sums[item], item) for item, total in totals.items()]
 
     ranking.sort()
-    ranking.reverse()
+    #ranking.reverse()
 
     return ranking

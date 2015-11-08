@@ -1,8 +1,0 @@
-package br.edu.fa7.estagio2.mongo;
-
-import com.mongodb.MongoClient;
-
-static public class MongoDAO {
-	private MongoClient mongoClient;
-	
-}
