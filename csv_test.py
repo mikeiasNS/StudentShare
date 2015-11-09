@@ -1,5 +1,5 @@
 # encoding=utf8 
-import csv, sys, json
+import csv, sys, json, ast
 from pymongo import MongoClient
 from bson import json_util
 
@@ -55,7 +55,11 @@ def saveModels():
 
 def getModels():
 	mod = db.models.find()
-	return json_util.dumps(mod)
+	mod = json_util.dumps(mod)
+	mod = json.loads(mod)
+	mod = ast.literal_eval(json.dumps(mod[0]))
+
+	return mod
 
 def getStudentsAndModels():
 	stud = db.students.find()

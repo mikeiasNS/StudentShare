@@ -1,4 +1,5 @@
 from math import sqrt
+import csv_test
 
 critics = {'Lisa Rose': {'Lady in the water': 2.5,
                          'Snakes on a Plane': 3.5,
@@ -116,3 +117,32 @@ def get_recommendations(prefs, person):
     #ranking.reverse()
 
     return ranking
+
+def get_profile(student):
+    models = csv_test.getModels()
+
+    soma_dev = 0
+    dev = 0
+
+    soma_gest = 0
+    gest = 0
+
+    soma_infra = 0
+    infra = 0
+
+    for disc in student:
+        if disc in models["Dev"]:
+            soma_dev += float(student[disc].replace(",", "."))
+            dev += 1
+        elif disc in models["Gest"]:
+            soma_gest += float(student[disc].replace(",", "."))
+            gest += 1
+        elif disc in models["Infra"]:
+            soma_infra += float(student[disc].replace(",", "."))
+            infra += 1
+
+    media_dev = soma_dev / dev
+    media_gest = soma_gest / gest
+    media_infra = soma_infra / infra
+
+    return {"Dev" : media_dev, "Gest" : media_gest, "Infra" : media_infra}
