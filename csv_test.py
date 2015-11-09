@@ -13,7 +13,7 @@ db = client.studentShareTest
 
 def saveStudents():
 	# loads a csv file
-	db.students.delete_many()
+	db.students.delete_many({})
 	csv_reader = csv.reader(open("students.csv", "r"), delimiter = ";")
 
 	my_dict = {}
@@ -27,7 +27,6 @@ def saveStudents():
 	for row in csv_reader:
 		my_dict[row[1]].update({row[2] : row[3]})
 
-
 	db.students.insert_one(my_dict)
 
 def getStudents():
@@ -35,6 +34,8 @@ def getStudents():
 	return json_util.dumps(stud)
 
 def saveModels():
+	db.models.delete_many({})
+	
 	# loads a csv file
 	csv_reader = csv.reader(open("models.csv", "r"), delimiter = ";")
 
