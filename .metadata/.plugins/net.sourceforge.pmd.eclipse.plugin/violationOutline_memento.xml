@@ -1,6 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<memento>
-<attribute name="priorityFilterList" value="1:2:3:4:5"/>
-<attribute name="tableColumnWidths" value="20:50:138:155:215"/>
-<attribute name="tableColumnSorter" value="0:0"/>
-</memento>
+<memento>&#x0A;<attribute name="priorityFilterList" value="1:2:3:4:5"/>&#x0A;<attribute name="tableColumnWidths" value="20:50:138:155:215"/>&#x0A;<attribute name="tableColumnSorter" value="0:0"/>&#x0A;</memento>

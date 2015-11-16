@@ -32,8 +32,6 @@ for stud in studJson:
 		
 		db.workData.insert_one(workData)
 
-cursor = db.workData.find({"name" : "Mikeias"})
-
 #for item in cursor:
 #	print item
 #	print "\n"

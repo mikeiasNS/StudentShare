@@ -60,21 +60,3 @@ def getModels():
 	mod = ast.literal_eval(json.dumps(mod[0]))
 
 	return mod
-
-def getStudentsAndModels():
-	stud = db.students.find()
-	mod = db.models.find()
-
-	myJson = {}
-
-	for student in stud:
-		myJson = json_util.dumps(student)
-
-	for model in mod:
-		myJson += json_util.dumps(model)
-
-	print myJson
-#cursor = db.students.find()
-#rules
-#for student in cursor:
-#	print json_util.dumps(student)

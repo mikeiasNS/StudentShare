@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects/>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/workspace/libraries/JSF 2.2 (Mojarra 2.2.0)/mojarra-2.2.0-FCS/lib/javax.faces.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="MongoTest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="MongoTest"/>
+    </library>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="MongoTest"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="MongoTest"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/com.sun.xml.bind_2.2.0.v201004141950.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/eclipselink.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.activation_1.1.0.v201108011116.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/jasper-el.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.mail_1.4.0.v201005080615.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/javax.persistence_2.1.0.v201304241213.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-jdbc.jar"/>
+  <path value="/StudentShare/WebContent/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="StudentShare"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-dbcp.jar"/>
+  <path value="C:/Users/MK-NB/Desktop/python/StudentShare/WebContent/WEB-INF/lib/bson-3.0.4.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.xml.bind_2.2.0.v201105210648.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/catalina-ha.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/jasper.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-i18n-es.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/servlet-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-util.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat7-websocket.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-i18n-fr.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-api.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/com.sun.tools.xjc_2.2.0.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/annotations-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/catalina-ant.jar"/>
+  <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.xml.stream_1.0.1.v201004272200.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-coyote.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/tomcat-i18n-ja.jar"/>
+  <path value="C:/Users/MK-NB/Desktop/python/StudentShare/WebContent/WEB-INF/lib/mongodb-driver-3.0.4.jar"/>
+  <path value="C:/Users/MK-NB/Desktop/python/StudentShare/WebContent/WEB-INF/lib/mongodb-driver-core-3.0.4.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/jsp-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/websocket-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/catalina-tribes.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/catalina.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/el-api.jar"/>
+  <path value="C:/apache-tomcat-7.0.59/lib/ecj-4.4.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.jsf.core"/>
+  <el/>
+ </validation>
+ <aliases/>
+ <includes/>
+ <uris/>
+</kb-project>
