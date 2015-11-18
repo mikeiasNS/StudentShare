@@ -94,16 +94,24 @@ def top_matchs(prefs, person, n = 5):
 
     return top_matchs[0:n]
 
-def get_recommendations(prefs, person, reverse = False):
+def get_recommendations(prefs, person, reverse = False, top_match = False):
     totals = {}
     sim_sums = {}
 
+    if top_matchs:
+        top_m = top_matchs(prefs, person)
+
+
     for other in prefs:
-        if other == person: continue
+        if other == person: 
+            continue
+        elif top_match & (other not in top_m):
+            continue
 
         sim = sim_distance(prefs, person, other)
 
-        if sim <= 0: continue
+        if sim <= 0: 
+            continue
 
         for item in prefs[other]:
 

@@ -5,7 +5,7 @@ from pymongo import MongoClient
 client = MongoClient()
 db = client.studentShareTest
 
-csv_test.saveStudents()
+#csv_test.saveStudents()
 
 studJson = csv_test.getStudents()
 modelsJson = csv_test.getModels()
@@ -20,7 +20,8 @@ for stud in studJson:
 	workData = {"name" : stud["name"]}
 
 	workData["registry"] = stud["registry"]
-	workData["warningSubjects"] = get_recommendations(prefs, stud["registry"])
+	workData["warningSubjects"] = get_recommendations(prefs, stud["registry"], top_match = True)
+	workData["recommendedSubjects"] = get_recommendations(prefs, stud["registry"], reverse = True, top_match = True)
 	workData["topMatchs"] = top_matchs(prefs, stud["registry"])
 	workData["profile"] = get_profile(stud["grades"])
 		

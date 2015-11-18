@@ -70,9 +70,9 @@
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="19" name="%0" offset="368" path="%1"/>
-   <linked-el length="7" name="%2" offset="448" path="%1"/>
-   <linked-el length="19" name="%2" offset="368" path="%1"/>
+   <linked-el length="19" name="%0" offset="465" path="%1"/>
+   <linked-el length="19" name="%2" offset="465" path="%1"/>
+   <linked-el length="7" name="%2" offset="545" path="%1"/>
   </el>
  </validation>
  <aliases>
