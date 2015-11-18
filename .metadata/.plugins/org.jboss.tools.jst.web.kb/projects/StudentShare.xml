@@ -69,9 +69,24 @@
  <validation>
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.jsf.core"/>
-  <el/>
+  <el>
+   <linked-el length="19" name="%0" offset="368" path="%1"/>
+   <linked-el length="7" name="%2" offset="448" path="%1"/>
+   <linked-el length="19" name="%2" offset="368" path="%1"/>
+  </el>
  </validation>
- <aliases/>
+ <aliases>
+  <alias path="/StudentShare/src/br/edu/fa7/e2/SS/TestBean.java" value="%0"/>
+  <alias path="/StudentShare/WebContent/teste.xhtml" value="%1"/>
+  <alias path="testBean" value="%2"/>
+ </aliases>
  <includes/>
- <uris/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
 </kb-project>

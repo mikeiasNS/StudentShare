@@ -89,9 +89,12 @@ def top_matchs(prefs, person, n = 5):
 
     scores.sort()
     scores.reverse()
-    return scores[0:n]
 
-def get_recommendations(prefs, person):
+    top_matchs = [item[1] for item in scores]
+
+    return top_matchs[0:n]
+
+def get_recommendations(prefs, person, reverse = False):
     totals = {}
     sim_sums = {}
 
@@ -114,9 +117,10 @@ def get_recommendations(prefs, person):
     ranking = [(total/sim_sums[item], item) for item, total in totals.items()]
 
     ranking.sort()
-    #ranking.reverse()
+    if reverse:
+       ranking.reverse()
 
-    return ranking
+    return [item[1] for item in ranking]
 
 def get_profile(student):
     models = csv_test.getModels()

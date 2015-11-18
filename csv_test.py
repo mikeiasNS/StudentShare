@@ -12,26 +12,31 @@ client = MongoClient()
 db = client.studentShareTest
 
 def saveStudents():
-	# loads a csv file
 	db.students.delete_many({})
+
+	# loads a csv file
 	csv_reader = csv.reader(open("students.csv", "r"), delimiter = ";")
 
-	my_dict = {}
+	my_list = []
+	current_registry = ""
 
 	# iterate in the csv reader
 	for row in csv_reader:
-		my_dict[row[1]] = {}
+		if row[0] != current_registry:
+			my_list.append({"registry" : row[0], "name" : row[1], "grades" : {row[2] : row[3]} })
+			current_registry = row[0]
+		else:
+			my_list[-1]["grades"].update({row[2] : row[3]})
 
-	csv_reader = csv.reader(open("students.csv", "r"), delimiter = ";")
-
-	for row in csv_reader:
-		my_dict[row[1]].update({row[2] : row[3]})
-
-	db.students.insert_one(my_dict)
+	db.students.insert_many(my_list)
 
 def getStudents():
 	stud = db.students.find()
-	return json_util.dumps(stud)
+	stud = json_util.dumps(stud)
+	stud = json.loads(stud)
+	stud = ast.literal_eval(json.dumps(stud))
+
+	return stud
 
 def saveModels():
 	db.models.delete_many({})

@@ -5,38 +5,29 @@ from pymongo import MongoClient
 client = MongoClient()
 db = client.studentShareTest
 
-#csv_test.saveStudents()
+csv_test.saveStudents()
 
-jsonStudentsStr = csv_test.getStudents()
+studJson = csv_test.getStudents()
 modelsJson = csv_test.getModels()
 
-studJson = json.loads(jsonStudentsStr)
-
-studJson = ast.literal_eval(json.dumps(studJson[0]))
-
-#print modelsJson[0]
-
-#print( "Euclidean: ", sim_distance(modelsJson, 'Mikeias', 'Abner') )
-#print( "Pearson: ", sim_pearson(critics, 'Lisa Rose', 'Toby') )
-
-#print studJson
+prefs = {stud["registry"] : stud["grades"] for stud in studJson}
 
 db.workData.delete_many({})
 for stud in studJson:
-	if stud != "_id":
-		workData = {"name" : stud}
+	if stud == "_id":
+		continue
 
-		workData["warningSubjects"] = get_recommendations(studJson, stud)
-		workData["topMatchs"] = top_matchs(studJson, stud)
-		workData["profile"] = get_profile(studJson[stud])
+	workData = {"name" : stud["name"]}
+
+	workData["registry"] = stud["registry"]
+	workData["warningSubjects"] = get_recommendations(prefs, stud["registry"])
+	workData["topMatchs"] = top_matchs(prefs, stud["registry"])
+	workData["profile"] = get_profile(stud["grades"])
 		
-		db.workData.insert_one(workData)
+	db.workData.insert_one(workData)
 
-#for item in cursor:
-#	print item
-#	print "\n"
+cursor = db.workData.find()
 
-#print( "rank ", top_matchs(studJson, 'Mikeias'))
-#for item in get_recommendations(studJson, 'Mikeias'):
-#	print item
-#print csv_test.getStudents()
+for item in cursor:
+	print item
+	print "\n"
