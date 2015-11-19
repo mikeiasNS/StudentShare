@@ -25,5 +25,6 @@
 			<attribute name="owner.project.facets" value="jst.jsf"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/MK-NB/Downloads/BootsFaces-OSP-dist-0.7.0.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

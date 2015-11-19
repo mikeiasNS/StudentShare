@@ -41,6 +41,18 @@
   <path value="C:/apache-tomcat-7.0.59/lib/tomcat-dbcp.jar"/>
   <path value="C:/Users/MK-NB/Desktop/python/StudentShare/WebContent/WEB-INF/lib/bson-3.0.4.jar"/>
   <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.xml.bind_2.2.0.v201105210648.jar"/>
+  <path value="C:/Users/MK-NB/Downloads/BootsFaces-OSP-dist-0.7.0.jar">
+   <libraries>
+    <library class="facelet">
+     <id class="model-object"
+      path="FileSystems/lib-BootsFaces-OSP-dist-0.7.0.jar/meta-inf/bootsfaces-b.taglib.xml" project="StudentShare"/>
+    </library>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/lib-BootsFaces-OSP-dist-0.7.0.jar/meta-inf/faces-config.xml" project="StudentShare"/>
+    </library>
+   </libraries>
+  </path>
   <path value="C:/apache-tomcat-7.0.59/lib/catalina-ha.jar"/>
   <path value="C:/apache-tomcat-7.0.59/lib/jasper.jar"/>
   <path value="C:/apache-tomcat-7.0.59/lib/tomcat-i18n-es.jar"/>
@@ -71,9 +83,9 @@
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="19" name="%0" offset="451" path="%1"/>
-   <linked-el length="7" name="%2" offset="531" path="%1"/>
-   <linked-el length="19" name="%2" offset="451" path="%1"/>
+   <linked-el length="33" name="%0" offset="2768" path="%1"/>
+   <linked-el length="22" name="%2" offset="2828" path="%1"/>
+   <linked-el length="33" name="%2" offset="2768" path="%1"/>
   </el>
  </validation>
  <aliases>
@@ -83,6 +95,9 @@
  </aliases>
  <includes/>
  <uris>
+  <uri value="http://bootsfaces.net/ui">
+   <prefix>b</prefix>
+  </uri>
   <uri value="http://java.sun.com/jsf/core">
    <prefix>f</prefix>
   </uri>

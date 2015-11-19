@@ -9,8 +9,8 @@ public class TestBean {
 	
 	private ProfileDAO DAO = new ProfileDAO();
 	
-	public List<String> getList() {
-		List<String> list = DAO.TestList();
+	public List<String> getTopMatchs(String registry) {
+		List<String> list = DAO.getTopMatchs("1321389");
 		
 		return list;
 	}

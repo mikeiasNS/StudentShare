@@ -38,4 +38,26 @@ public class ProfileDAO {
 		
 		return hum;
 	}
+	
+	public List<String> getTopMatchs(String registry){
+		final List<String> topMatchs = new ArrayList<String>();
+		
+		FindIterable<Document> it = mongoDB.getCollection("workData").find(new Document("registry", registry));
+
+		
+		it.forEach(new Block<Document>() {
+
+			@Override
+			public void apply(Document doc) {
+				ArrayList<String> d = (ArrayList<String>) doc.get("topMatchs");
+				
+				for (int i = 0; i < d.size(); i++) {
+					topMatchs.add( StringEscapeUtils.unescapeJava(d.get(i)) );
+				}
+			}
+			
+		});
+		
+		return topMatchs;
+	}
 }
