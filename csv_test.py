@@ -15,13 +15,19 @@ def saveStudents():
 	db.students.delete_many({})
 
 	# loads a csv file
-	csv_reader = csv.reader(open("students.csv", "r"), delimiter = ";")
+	csv_reader = open("students.csv", "r")
 
+	my_file = []
 	my_list = []
 	current_registry = ""
 
-	# iterate in the csv reader
 	for row in csv_reader:
+		current = row.split(";")
+		current[-1] = current[-1].replace("\n", "")
+		my_file.append(current)
+
+	# iterate in the csv reader
+	for row in my_file:
 		if row[0] != current_registry:
 			my_list.append({"registry" : row[0], "name" : row[1], "grades" : {row[2] : row[3]} })
 			current_registry = row[0]

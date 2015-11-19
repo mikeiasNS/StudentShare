@@ -1,0 +1,31 @@
+package br.edu.fa7.e2.SS;
+
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+
+@ManagedBean
+public class TestBean {
+	
+	private ProfileDAO DAO = new ProfileDAO();
+	
+	public List<String> getList() {
+		List<String> list = DAO.TestList();
+		
+		for (String str : list) {
+			String myString = str.split(" ")[0];
+			myString = myString.replace("\\","");
+			String[] arr = myString.split("u");
+			String text = "";
+			for(int i = 1; i < arr.length; i++){
+			    int hexVal = Integer.parseInt(arr[i], 16);
+			    text += (char)hexVal;
+			}
+		}
+		
+		return list;
+	}
+	
+}

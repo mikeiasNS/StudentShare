@@ -128,7 +128,7 @@ def get_recommendations(prefs, person, reverse = False, top_match = False):
     if reverse:
        ranking.reverse()
 
-    return [item[1] for item in ranking]
+    return [item[1].encode() for item in ranking]
 
 def get_profile(student):
     models = csv_test.getModels()

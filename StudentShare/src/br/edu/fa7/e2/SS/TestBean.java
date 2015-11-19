@@ -10,7 +10,9 @@ public class TestBean {
 	private ProfileDAO DAO = new ProfileDAO();
 	
 	public List<String> getList() {
-		return DAO.TestList();
+		List<String> list = DAO.TestList();
+		
+		return list;
 	}
 	
 }

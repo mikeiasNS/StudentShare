@@ -7,19 +7,19 @@
    <libraries>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="MongoTest"/>
+      path="FileSystems/lib-javax.faces.jar/meta-inf/html_basic.tld" project="StudentShare"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="MongoTest"/>
+      path="FileSystems/lib-javax.faces.jar/meta-inf/jsf_core.tld" project="StudentShare"/>
     </library>
     <library class="facelet">
      <id class="model-object"
-      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="MongoTest"/>
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.taglib.xml" project="StudentShare"/>
     </library>
     <library class="tld">
      <id class="model-object"
-      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="MongoTest"/>
+      path="FileSystems/lib-javax.faces.jar/meta-inf/mojarra_ext.tld" project="StudentShare"/>
     </library>
    </libraries>
   </path>
@@ -50,6 +50,7 @@
   <path value="C:/apache-tomcat-7.0.59/lib/tomcat-i18n-fr.jar"/>
   <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/org.eclipse.persistence.jpa.modelgen_2.5.2.v20140319-9ad6abd.jar"/>
   <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/org.eclipse.persistence.jpars_2.5.2.v20140319-9ad6abd.jar"/>
+  <path value="C:/Users/MK-NB/Desktop/python/StudentShare/WebContent/WEB-INF/lib/commons-lang-2.6.jar"/>
   <path value="C:/apache-tomcat-7.0.59/lib/tomcat-api.jar"/>
   <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/com.sun.tools.xjc_2.2.0.jar"/>
   <path value="C:/apache-tomcat-7.0.59/lib/annotations-api.jar"/>
@@ -70,9 +71,9 @@
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="19" name="%0" offset="465" path="%1"/>
-   <linked-el length="19" name="%2" offset="465" path="%1"/>
-   <linked-el length="7" name="%2" offset="545" path="%1"/>
+   <linked-el length="19" name="%0" offset="451" path="%1"/>
+   <linked-el length="7" name="%2" offset="531" path="%1"/>
+   <linked-el length="19" name="%2" offset="451" path="%1"/>
   </el>
  </validation>
  <aliases>

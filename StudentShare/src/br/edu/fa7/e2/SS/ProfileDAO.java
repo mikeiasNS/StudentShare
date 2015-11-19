@@ -5,6 +5,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+import org.apache.commons.lang.StringEscapeUtils;
 import org.bson.Document;
 
 import com.mongodb.Block;
@@ -29,7 +30,7 @@ public class ProfileDAO {
 				ArrayList<String> d = (ArrayList<String>) doc.get("warningSubjects");
 				
 				for (int i = 0; i < d.size(); i++) {
-					hum.add(d.get(i));
+					hum.add( StringEscapeUtils.unescapeJava(d.get(i)) );
 				}
 			}
 			
