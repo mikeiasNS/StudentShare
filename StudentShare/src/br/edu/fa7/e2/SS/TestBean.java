@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.faces.bean.ManagedBean;
 
+import com.google.gson.Gson;
+
 @ManagedBean
 public class TestBean {
 	
@@ -13,6 +15,10 @@ public class TestBean {
 		List<String> list = DAO.getTopMatchs("1321389");
 		
 		return list;
+	}
+	
+	public String getJsonTopM() {
+		return new Gson().toJson(this.getTopMatchs("1321389"));
 	}
 	
 }

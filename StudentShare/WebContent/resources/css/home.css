@@ -23,8 +23,8 @@ body {
 .profile-userpic img {
   float: none;
   margin: 0 auto;
-  width: 50%;
-  height: 50%;
+  width: 200px;
+  height: 200px;
   -webkit-border-radius: 50% !important;
   -moz-border-radius: 50% !important;
   border-radius: 50% !important;
@@ -37,9 +37,14 @@ body {
 
 .profile-usertitle-number {
   color: #FFFFFF;
-  font-size: 30px;
-  font-weight: 600;
+  font-size: 25px;
 }
+
+.profile-usertitle-minname {
+  color: #FFFFFF;
+  font-size: 9px;
+}
+
 .profile-usertitle-name {
   color: #5a7391;
   font-size: 16px;

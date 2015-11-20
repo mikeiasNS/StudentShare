@@ -29,6 +29,7 @@
   <path value="C:/apache-tomcat-7.0.59/lib/jasper-el.jar"/>
   <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/moxy/javax.mail_1.4.0.v201005080615.jar"/>
   <path value="C:/workspace/libraries/EclipseLink 2.5.2/eclipselink/jlib/jpa/javax.persistence_2.1.0.v201304241213.jar"/>
+  <path value="C:/Users/MK-NB/Desktop/python/StudentShare/WebContent/WEB-INF/lib/gson-2.4.jar"/>
   <path value="C:/apache-tomcat-7.0.59/lib/tomcat-jdbc.jar"/>
   <path value="/StudentShare/WebContent/WEB-INF/faces-config.xml">
    <libraries>
@@ -83,9 +84,8 @@
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="33" name="%0" offset="2768" path="%1"/>
-   <linked-el length="22" name="%2" offset="2828" path="%1"/>
-   <linked-el length="33" name="%2" offset="2768" path="%1"/>
+   <linked-el length="84" name="%0" offset="3813" path="%1"/>
+   <linked-el length="84" name="%2" offset="3813" path="%1"/>
   </el>
  </validation>
  <aliases>
