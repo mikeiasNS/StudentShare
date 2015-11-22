@@ -1,0 +1,88 @@
+package br.edu.fa7.e2.SS;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Set;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import com.google.gson.Gson;
+
+@ManagedBean
+@SessionScoped
+public class ProfileBean {
+	
+	private ProfileDAO DAO = new ProfileDAO();
+	private Student student = new Student();
+	
+	public String login(){
+		String destiny = null;
+		Boolean result = DAO.login(student.getRegistry());
+		
+		if(result){
+			destiny = "profile";
+			student = DAO.getStudent(student.getRegistry());
+			DAO.getGrades(student.getRegistry());
+		}
+		
+		return destiny;
+	}
+	
+	public String getJsonProfile(){
+		return new Gson().toJson(this.student.getProfile());
+	}
+	
+	public String getJsonGrades(){
+		return new Gson().toJson(this.student.getGrades());
+	}
+	
+	public String getJsonGrades(String registry){
+		return new Gson().toJson(DAO.getGrades(registry));
+	}
+	
+	public String getJsonGrades(int length){
+		return new Gson().toJson(this.student.getGrades());
+	}
+	
+	public String getJsonGrades(int length, String registry){
+		HashMap<String, Double> grades = DAO.getGrades(registry);
+		HashMap<String, Double> gradesToReturn = new HashMap<String, Double>();
+		
+		if(grades.size() <= length){
+			gradesToReturn = grades;
+		} else{
+			Set<String> subjects = grades.keySet();
+			Iterator<String> it = subjects.iterator();
+			int i = 0;
+			
+			while(it.hasNext() && i < length){
+				gradesToReturn.put(it.next(), grades.get(it.next()));
+			}
+			
+		}
+		
+		return new Gson().toJson(gradesToReturn);
+	}
+	
+	public String getJsonTopM() {
+		return new Gson().toJson(this.student.getTopMatchs());
+	}
+	
+	public String getJsonWarningSubjects(){
+		return new Gson().toJson(this.student.getWarningSubjects());
+	}
+	
+	public String getJsonRecommendedSubjects(){
+		return new Gson().toJson(this.student.getRecommendedSubjects());
+	}
+
+	public Student getStudent() {
+		return student;
+	}
+
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+	
+}

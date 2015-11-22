@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:b="http://bootsfaces.net/ui">
+
+<h:head>
+	<h:outputStylesheet library="css" name="bootstrap.css"></h:outputStylesheet>
+	<h:outputStylesheet library="css" name="home.css"></h:outputStylesheet>
+	<h:outputScript library="js" name="Chart.js/Chart.js"></h:outputScript>
+</h:head>
+
+<h:body>
+
+	<div class="container">
+		<div class="row profile">
+			<div class="col-md-3">
+				<div class="profile-sidebar" style="position: fixed;">
+					<!-- SIDEBAR USERPIC -->
+					<div
+						style="background: #519DC6; width: 50px; height: 50px; float: right; margin: 0 0 10px 10px; text-align: center; border-top-left-radius: 5px; border-bottom-left-radius: 5px">
+						<div class="profile-usertitle-number">8,9</div>
+						<div class="profile-usertitle-minname">GLOBAL</div>
+					</div>
+					<div class="profile-userpic">
+						<img src="../resources/img/megusta.png" class="img-responsive"
+							alt="" />
+					</div>
+					<!-- END SIDEBAR USERPIC -->
+					<!-- SIDEBAR USER TITLE -->
+					<div class="profile-usertitle">
+						<div class="profile-usertitle-name">Me Gusta</div>
+					</div>
+					<!-- END SIDEBAR USER TITLE -->
+					<!-- SIDEBAR BUTTONS -->
+					<div class="profile-userbuttons">
+						<!-- 						<button type="button" class="btn btn-success btn-sm">Gostei</button> -->
+						<!-- 						<button type="button" class="btn btn-danger btn-sm">Deixe -->
+						<!-- 							seu recado</button> -->
+					</div>
+					<!-- END SIDEBAR BUTTONS -->
+					<!-- SIDEBAR MENU -->
+					<div class="profile-usermenu">
+						<ul class="nav">
+							<li class="active"><a href="#perfil_atuacao"> <img
+									src="../resources/img/25x25/Diploma 2_2.png" class="icon-img"
+									alt="" /> Perfis de atuação
+							</a></li>
+							<li><a href="#top_match"> <img
+									src="../resources/img/25x25/Conference.png" class="icon-img"
+									alt="" /> Top match
+							</a></li>
+							<li><a href="#risco"> <img
+									src="../resources/img/25x25/bearish.png" class="icon-img"
+									alt="" /> Disciplinas de risco
+							</a></li>
+							<li><a href="#recomendado"> <img
+									src="../resources/img/25x25/recomendadas.png" class="icon-img"
+									alt="" /> Disciplinas recomendadas
+							</a></li>
+							<li><a href="#sobre"> <img
+									src="../resources/img/25x25/Info.png" class="icon-img" alt="" />
+									Sobre
+							</a></li>
+						</ul>
+					</div>
+					<!-- END MENU -->
+				</div>
+			</div>
+			<div class="col-md-9">
+				<div class="profile-content" style="background-color: rgb(220, 220, 220);">
+					<div id="perfil_atuacao" class=""
+						style="width: 100%; height: 500px; margin-bottom: 2%">
+						<center>
+							<h2>Perfis de Atuação</h2>
+							<canvas id="CVperfil_atuacao" style="width: 80%; height: 80%; margin-top: 5px;"> </canvas>
+						</center>
+					</div>
+					<div id="top_match" class=""
+						style="width: 100%; height: 500px; background-color: green; margin-bottom: 2%">
+					</div>
+					<div id="risco" class=""
+						style="width: 100%; height: 500px; background-color: blue; margin-bottom: 2%">
+					</div>
+					<div id="recomendado" class=""
+						style="width: 100%; height: 500px; background-color: black; margin-bottom: 2%">
+					</div>
+					<div id="sobre" class=""
+						style="width: 100%; height: 500px; background-color: pink; margin-bottom: 2%">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<center>
+		<strong>Produzido por <a href="" target="_blank">Abner,
+				Hugo e Mikeias</a></strong>
+	</center>
+	<br> </br>
+	<h:outputScript library="js">
+		var map = #{profileBean.getJsonProfile()}
+		var ctx = document.getElementById("CVperfil_atuacao").getContext("2d");
+		var profiles = [];
+		var grades = [];
+		for(var key in map){
+			profiles.push(key);
+			grades.push(map[key]);
+		}
+		
+		var data = {
+		    labels: profiles,
+		    datasets: [
+		        {
+		            label: "Perfis de Atuação",
+		            fillColor: "rgba(220,220,220,0.5)",
+		            strokeColor: "rgba(220,220,220,0.8)",
+		            highlightFill: "rgba(220,220,220,0.75)",
+		            highlightStroke: "rgba(220,220,220,1)",
+		            data: grades
+		        }
+		    ]
+		};
+		
+		var profileChart = new Chart(ctx).Bar(data);
+		
+	</h:outputScript>
+</h:body>
+</html>

@@ -84,14 +84,42 @@
   <core validator-id="jsf-verification"/>
   <core validator-id="jboss.jsf.core"/>
   <el>
-   <linked-el length="84" name="%0" offset="3813" path="%1"/>
-   <linked-el length="84" name="%2" offset="3813" path="%1"/>
+   <linked-el length="30" name="%0" offset="1410" path="%1"/>
+   <linked-el length="35" name="%0" offset="3471" path="%1"/>
+   <linked-el length="41" name="%0" offset="4480" path="%1"/>
+   <linked-el length="41" name="%0" offset="4021" path="%1"/>
+   <linked-el length="34" name="%0" offset="634" path="%2"/>
+   <linked-el length="30" name="%3" offset="1410" path="%1"/>
+   <linked-el length="35" name="%3" offset="3471" path="%1"/>
+   <linked-el length="25" name="%3" offset="753" path="%2"/>
+   <linked-el length="41" name="%3" offset="4480" path="%1"/>
+   <linked-el length="41" name="%3" offset="4021" path="%1"/>
+   <linked-el length="908" name="%3" offset="4886" path="%1"/>
+   <linked-el length="34" name="%3" offset="634" path="%2"/>
+   <linked-el length="49" name="%3" offset="4552" path="%1"/>
+   <linked-el length="27" name="%3" offset="3597" path="%1"/>
+   <linked-el length="49" name="%3" offset="4093" path="%1"/>
+   <linked-el length="836" name="%3" offset="3999" path="%4"/>
+   <linked-el length="27" name="%3" offset="3630" path="%1"/>
+   <linked-el length="30" name="%5" offset="1410" path="%1"/>
+   <linked-el length="35" name="%5" offset="3471" path="%1"/>
+   <linked-el length="25" name="%5" offset="753" path="%2"/>
+   <linked-el length="41" name="%5" offset="4480" path="%1"/>
+   <linked-el length="41" name="%5" offset="4021" path="%1"/>
+   <linked-el length="908" name="%5" offset="4886" path="%1"/>
+   <linked-el length="34" name="%5" offset="634" path="%2"/>
+   <linked-el length="49" name="%5" offset="4552" path="%1"/>
+   <linked-el length="27" name="%5" offset="3597" path="%1"/>
+   <linked-el length="49" name="%5" offset="4093" path="%1"/>
   </el>
  </validation>
  <aliases>
-  <alias path="/StudentShare/src/br/edu/fa7/e2/SS/TestBean.java" value="%0"/>
-  <alias path="/StudentShare/WebContent/teste.xhtml" value="%1"/>
-  <alias path="testBean" value="%2"/>
+  <alias path="/StudentShare/WebContent/profile.xhtml" value="%1"/>
+  <alias path="/StudentShare/WebContent/index.xhtml" value="%2"/>
+  <alias path="/StudentShare/src/br/edu/fa7/e2/SS/Student.java" value="%0"/>
+  <alias path="profileBean" value="%3"/>
+  <alias path="/StudentShare/WebContent/teste.xhtml" value="%4"/>
+  <alias path="/StudentShare/src/br/edu/fa7/e2/SS/ProfileBean.java" value="%5"/>
  </aliases>
  <includes/>
  <uris>

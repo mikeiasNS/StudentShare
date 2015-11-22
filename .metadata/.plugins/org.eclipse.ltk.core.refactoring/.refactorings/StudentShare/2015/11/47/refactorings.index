@@ -5,3 +5,14 @@
 1447861591770	Move 'js' to 'resources'
 1447946830567	Delete element
 1448047821036	Delete element
+1448059742167	Rename type 'TestBean'
+1448062411733	Rename local variable 'disciplinas'
+1448062448012	Rename local variable 'subjIT'
+1448064846184	Rename local variable 'grades'
+1448064903034	Rename local variable 'subjects'
+1448064918563	Rename local variable 'subjIt'
+1448064944171	Rename local variable 'currentSubject'
+1448065012663	Rename local variable 'grades'
+1448072427858	Extract local variable 'arrayList'
+1448076143887	Rename resource 'teste.xhtml'
+1448076316568	Encapsulate field 'student'

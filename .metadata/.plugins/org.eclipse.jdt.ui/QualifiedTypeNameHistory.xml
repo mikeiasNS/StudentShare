@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="javax.faces.convert.Converter"/>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-<fullyQualifiedTypeName name="org.apache.commons.validator.routines.UrlValidator"/>
-<fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
 <fullyQualifiedTypeName name="javax.faces.convert.ConverterException"/>
 <fullyQualifiedTypeName name="javax.faces.convert.FacesConverter"/>
 <fullyQualifiedTypeName name="br.edu.fa7.tecnicas.jsf.URLBookmark"/>
@@ -19,7 +15,6 @@
 <fullyQualifiedTypeName name="javax.persistence.Column"/>
 <fullyQualifiedTypeName name="br.edu.estudo.jpa.User.StatusType"/>
 <fullyQualifiedTypeName name="br.edu.estudo.jpa.Vehicle"/>
-<fullyQualifiedTypeName name="java.lang.Boolean"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
 <fullyQualifiedTypeName name="javax.persistence.Id"/>
 <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
@@ -40,24 +35,29 @@
 <fullyQualifiedTypeName name="br.edu.fa7.studentshare.models.Student"/>
 <fullyQualifiedTypeName name="br.edu.fa7.estagio2.mongo.MongoDAO"/>
 <fullyQualifiedTypeName name="com.mongodb.client.MongoCollection"/>
-<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
-<fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
 <fullyQualifiedTypeName name="br.edu.fa7.estagio2.models.Client"/>
 <fullyQualifiedTypeName name="com.mongodb.client.MongoDatabase"/>
 <fullyQualifiedTypeName name="com.mongodb.MongoClient"/>
 <fullyQualifiedTypeName name="javax.faces.bean.ManagedBean"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.lang.Double"/>
-<fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="java.util.function.Consumer"/>
-<fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.lang.Object"/>
 <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
 <fullyQualifiedTypeName name="java.nio.charset.StandardCharsets"/>
-<fullyQualifiedTypeName name="org.apache.commons.lang.StringEscapeUtils"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="com.mongodb.Block"/>
-<fullyQualifiedTypeName name="org.bson.Document"/>
 <fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="org.bson.Document"/>
+<fullyQualifiedTypeName name="br.edu.fa7.e2.SS.ProfileDAO"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.StringEscapeUtils"/>
+<fullyQualifiedTypeName name="javax.faces.bean.SessionScoped"/>
+<fullyQualifiedTypeName name="br.edu.fa7.e2.SS.ProfileBean"/>
+<fullyQualifiedTypeName name="br.edu.fa7.e2.SS.Student"/>
+<fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
+<fullyQualifiedTypeName name="com.mongodb.Block"/>
+<fullyQualifiedTypeName name="java.lang.Boolean"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

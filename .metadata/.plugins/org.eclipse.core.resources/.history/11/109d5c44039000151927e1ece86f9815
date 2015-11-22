@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+	<h:head>
+		<h:outputStylesheet library="css" name="bootstrap.css"></h:outputStylesheet>
+	</h:head>
+	
+	<h:body>
+		<center>
+			<h:form>
+				<fieldset>
+					<h:inputText value="#{profileBean.student.registry}" styleClass="form-control" />
+					<h:commandButton value="Entrar" styleClass="form-control" />
+				</fieldset>
+			</h:form>
+		</center>
+	</h:body>
+</html>

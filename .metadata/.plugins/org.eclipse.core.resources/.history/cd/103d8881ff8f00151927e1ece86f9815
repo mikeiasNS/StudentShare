@@ -1,0 +1,53 @@
+package br.edu.fa7.e2.SS;
+
+import java.util.HashMap;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+import com.google.gson.Gson;
+
+@ManagedBean
+@SessionScoped
+public class ProfileBean {
+	
+	private ProfileDAO DAO = new ProfileDAO();
+	private Student student;
+	
+	public List<String> getTopMatchs(String registry) {
+		List<String> list = DAO.getTopMatchs("1321389");
+		return list;
+	}
+	
+	public HashMap<String, String> getGrades(String registry){
+		HashMap<String, String> grades = DAO.getGrades(registry); 
+		return grades;
+	}
+	
+	public HashMap<String, Double> getProfile(String registry){
+		HashMap<String, Double> profile = DAO.getProfile(registry); 
+		return profile;
+	}
+	
+	public String getJsonProfile(){
+		return new Gson().toJson(this.getProfile("1321389"));
+	}
+	
+	public String getJsonGrades(){
+		return new Gson().toJson(this.getGrades("1321389"));
+	}
+	
+	public String getJsonTopM() {
+		return new Gson().toJson(this.getTopMatchs("1321389"));
+	}
+
+	public Student getStudent() {
+		return student;
+	}
+
+	public void setStudent(Student student) {
+		this.student = student;
+	}
+	
+}
